@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.be.wildanimaldetection.Activities.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+
+    <fragment
+        android:id="@+id/Map"
+        android:name="com.be.wildanimaldetection.Activities.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/About"
+        android:name="com.be.wildanimaldetection.Activities.ui.about.AboutFragment"
+        android:label="About us"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/Broadcast"
+        android:name="com.be.wildanimaldetection.Activities.ui.broadcast.BroadcastFragment"
+        android:label="Broadcast Alert"
+        tools:layout="@layout/fragment_broadcast" />
+
+    <fragment
+        android:id="@+id/LiveSteam"
+        android:name="com.be.wildanimaldetection.Activities.ui.livestream.LiveStreamFragment"
+        android:label="Live Stream"
+        tools:layout="@layout/fragment_live_stream" />
+</navigation>
